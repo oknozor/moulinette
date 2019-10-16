@@ -1,0 +1,17 @@
+build the image
+```
+docker build -f DockerFiles/DockerFile.rust_alpine -t moulinette/rust .
+```
+
+run
+```
+docker run -d \
+  --name rust_stable_moulinette \
+  -v /home/okno/_WORKSHOP/Rust/musicbrainz:/usr/src/app \
+  moulinette/rust:latest
+```
+
+exec
+```
+docker exec -t rust_stable_moulinette cargo build
+```

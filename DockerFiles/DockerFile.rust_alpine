@@ -1,0 +1,9 @@
+FROM rust:1.38
+
+WORKDIR /usr/src/app
+COPY . .
+USER root
+
+RUN rustup component add rustfmt --toolchain 1.38.0-x86_64-unknown-linux-gnu
+
+#CMD tail -f /dev/null

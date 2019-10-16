@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "moulinette_cli",
+    "moulinette_lib",
+]

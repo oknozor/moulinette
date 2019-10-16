@@ -1,0 +1,6 @@
+language = "rust"
+script = ""
+# script = """
+# cargo fmt --all
+# cargo build
+# """
